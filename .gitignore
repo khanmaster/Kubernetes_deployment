@@ -1,3 +1,1 @@
-node_deploy_k8.yml
-sparta-node-service.yml
-node-hpa.yml
+kompose.exe

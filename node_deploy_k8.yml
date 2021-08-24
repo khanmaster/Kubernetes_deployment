@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+  name: sparta-node-app-deploy
+
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: sparta-node-app
+
+  template:
+    metadata:
+      labels:
+        app: sparta-node-app
+
+    spec:
+      containers:
+      - image: ahskhan/eng89_node_prod
+        imagePullPolicy: Always
+        name: eng89-node-prod
+        ports:
+        - containerPort: 3000      

@@ -1,0 +1,22 @@
+apiVersion: v1
+
+kind: Service
+
+metadata:
+  name: sparta-node-service
+
+spec:
+  selector:
+    app: sparta-node-app
+  ports:
+  - port: 3000
+    targetPort: 3000 
+
+  
+  type: LoadBalancer
+  #type: NodePort
+#---
+  # scale our app 
+  # hpa to auto scale our deployment on demand
+  # in the config we neeed to declare min numbers of pods and max numbers of pods
+  # create a file called node-hpa.yml
