@@ -1,6 +1,8 @@
 # Kubernetes aka K8
 
 
+![](https://github.com/khanmaster/Kubernetes_deployment/blob/main/k8-labels.png)
+
 - Deploymentment with K8 
 
 - Let's create `nginx-deployment.yml`
